@@ -1,0 +1,75 @@
+.body.full .yt-card{
+    height: 240px;
+    width: 280px;
+    margin: 20px 10px;
+}
+.body.half .yt-card{
+    height: 250px;
+    width: 320px;
+    margin: 10px;
+}
+.yt-card .image-section{
+    position: relative;
+}
+.yt-card .image-section .card-duration{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1px 4px;
+    background: black;
+    color: white;
+}
+.yt-card .card-image{
+    width: 100%;
+    height: 155px;
+}
+.yt-card .content-section{
+    display: flex;
+    width: 100%;
+}
+.yt-card .channel-logo{
+    width: 20%;
+    display: flex;
+    padding-top: 16px;
+}
+.yt-card .channel-details{
+    width: 80%;
+}
+.yt-card .channel-details .card-title{
+    padding: 0;
+    margin: 0;
+    padding-top: 14px;
+    font-size: 15px;
+}
+.yt-card .channel-details .card-user{
+    font-size: 14px;
+    color: #606060;
+    padding: 0;
+    padding-top: 6px;
+    margin: 0;
+}
+.yt-card .channel-details .card-info{
+    font-size: 14px;
+    color: #606060;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 500px){
+    .yt-card{
+        width: 100vw;
+        height: 260px;
+        margin: 0;
+    }
+    .yt-card .content-section .channel-logo{
+        display: none;
+    }
+    .yt-card .content-section .channel-details{
+        padding: 8px 16px;
+    }
+    .yt-card .content-section .channel-details p{
+        display: inline;
+        margin: 0 4px;
+    }
+}

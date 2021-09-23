@@ -1,0 +1,186 @@
+.video-screen{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.video-container{
+    display: grid; 
+    height: 200px;
+    width: 100%;
+    grid-template-columns: 1.3fr 0.7fr; 
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+      "video-section recommendation-section"
+      "description-section recommendation-section"; 
+}
+.video-section {
+    height: 460px;
+    width: 100%;
+    grid-area: video-section;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 4px 0;
+}
+.video-section video{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.description-section {
+    padding-top: 30px;
+    grid-area: description-section;
+}
+.recommendations-container{
+    grid-area: recommendation-section;
+    height: 100px;
+    padding-left: 20px;
+}
+.subscribe-btn{
+    border: none;
+    height: 40px;
+    background: #CD322C;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 450;
+    letter-spacing: 1px;
+    padding: 4px 18px;
+}
+.yt-mini-card{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    margin: 8px auto;
+}
+.yt-mini-card .yt-card-image{
+    width: 42%;
+    height: 100%;
+    position: relative;
+}
+.yt-mini-card .yt-card-image img{
+    width: 100%;
+    height: 100%;
+}
+.yt-mini-card .yt-card-image .duration{
+    position: absolute;
+    bottom: -10px;
+    right: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1px 4px;
+    background: black;
+    color: white;
+}
+.yt-mini-card .yt-card-description{
+    width: 58%;
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+.trending-videos{
+    margin: 16px;
+}
+.yt-maxi-card{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    margin: 8px;
+}
+.yt-maxi-card .yt-card-image{
+    width: 28%;
+    height: 100%;
+    position: relative;
+}
+.yt-maxi-card .yt-card-image img{
+    width: 100%;
+    height: 100%;
+}
+.yt-maxi-card .yt-card-image .duration{
+    position: absolute;
+    bottom: -10px;
+    right: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1px 4px;
+    background: black;
+    color: white;
+}
+.yt-maxi-card .yt-card-description{
+    width: 58%;
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 1100px){
+    .video-screen{
+        padding: 20px;
+    }
+    .video-container{
+        display: grid; 
+        height: 200px;
+        width: 100%;
+        grid-template-columns: 1.3fr 0.7fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+            "video-section video-section"
+            "description-section recommendation-section"; 
+    }
+    .video-section {
+        grid-area: video-section;
+    }
+    .recommendation-section {
+        grid-area: recommendation-section;
+    }
+    .description-section {
+        grid-area: description-section;
+    }
+}
+@media screen and (max-width: 800px){
+    .yt-maxi-card{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        margin: 8px;
+    }
+    .explore-cards-section{
+        justify-content: center;
+        align-items: center;
+    }
+    .yt-maxi-card .yt-card-image{
+        width: 45%;
+        height: 100%;
+        position: relative;
+    }
+    .yt-maxi-card .yt-card-description{
+        width: 55%;
+        padding: 0 10px;
+        text-transform: capitalize;
+    }
+    .video-screen{
+        padding: 14px;
+    }
+    .video-container{
+        display: grid; 
+        height: 200px;
+        width: 100%;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr auto; 
+        grid-template-areas: 
+            "video-section"
+            "description-section"
+            "recommendation-section"; 
+    }
+    .video-section {
+        grid-area: video-section;
+    }
+    .recommendation-section {
+        grid-area: recommendation-section;
+    }
+    .description-section {
+        grid-area: description-section;
+    }
+}
+/* .{
+    
+} */

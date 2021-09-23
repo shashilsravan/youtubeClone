@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #F9F9F9;
+}
+.body.half{
+    margin-left: 90px;
+    margin-top: 37px;
+}
+.body.full{
+    margin-left: 255px;
+    margin-top: 37px;
+}
+.not-link{
+    color: #000;
+    text-decoration: none;
+}
+.not-link:hover{
+    color: black;
+}
+.yt-body{
+    padding: 6px 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-mobile{
+    display: none;
+}
+.yt-apps{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    width: 225px;
+    background: white;
+    z-index: 99;
+}
+.MuiButtonBase-root.MuiIconButton-root{
+    padding: 0px 4px;
+}
+.MuiButtonBase-root.MuiIconButton-root:hover{
+    background: transparent;
+}
+.yt-create{
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 205px;
+    background: white;
+    z-index: 99;
+}
+.yt-user{
+    position: absolute;
+    top: 55px;
+    left: -150px;
+    width: 205px;
+    background: white;
+    z-index: 99;
+}
+.font-red{
+    color: #F83F37;
+}
+.tilt{
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.error-msge{
+    color: red !important;
+}
+.Name-icon{
+    background: #6f42c1;
+    color: white;
+    border-radius: 50%;
+    margin: 0 6px;
+    padding: 5px !important;
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px){
+    .body.half{
+        margin-left: 0;
+    }
+    .body.full{
+        margin-left: 0;
+    }
+    .yt-body{
+        padding: 0;
+    }
+    .d-mobile{
+        display: block ;
+    }
+    .custom-right{
+        position: absolute;
+        display: flex;
+        right: 0;
+        top: 10px;
+    }
+    .mobile-search{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        background: #F1F1F1;
+        height: 60px;
+        margin-top: -10px;
+        padding: 0 10px;
+        z-index: 10;
+    }
+    .mobile-search input{
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid gray;
+        width: 75vw;
+        margin-left: 10px;
+    }
+    .black-screen{
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 5;
+    }
+}

@@ -1,0 +1,97 @@
+.sidepanel-half{
+    width: 90px;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    margin-top: 2.4rem;
+}
+.sidepanel-full{
+    width: 255px;
+    margin-top: 2.4rem;
+    padding: 4px 4px 0 0;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    overflow-y: auto;
+    padding-bottom: 80px;
+}
+.panel-list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.panel-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.panel-card:hover{
+    background: #F2F2F2;
+}
+.panel-card p{
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+}
+
+.panel-horizontal-card{
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+}
+.panel-horizontal-card:hover{
+    background: #f2f2f2;
+}
+.panel-horizontal-card.selected{
+    background: #E5E5E5;
+}
+.panel-horizontal-card.selected p{
+    font-weight: 450;
+}
+.panel-horizontal-card p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.yt-upperfont{
+    padding: 0px 24px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.img-mini-rounded{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.yt-minifont{
+    margin: 0 4px;
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.footer-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+}
+.yt-lightfont{
+    margin: 0 4px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+@media screen and (max-width: 500px){
+    .sidepanel-half{
+        display: none;
+    }
+    .sidepanel-full{
+        display: none;
+    }
+}

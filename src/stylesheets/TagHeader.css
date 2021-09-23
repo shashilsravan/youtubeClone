@@ -1,0 +1,35 @@
+.post-header{
+    display: flex;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 12px 10px;
+    overflow: auto;
+    white-space: nowrap;
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+    display: none;
+}
+.post-header a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 14px;
+    background: rgb(242,242,242);
+    width: fit-content;
+    font-size: 13px;
+    color: black;
+    margin: 0 6px;
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+}
+.rounded-pill:hover{
+    padding: 5px 14px;
+    background: rgb(230,230,230);
+}
+.rounded-pill.selected{
+    background: black;
+    color: white;
+}

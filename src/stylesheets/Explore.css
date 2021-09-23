@@ -1,0 +1,29 @@
+.explore-cards-section{
+    padding: 10px 70px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+.icon{
+    font-size: 1.7rem;
+}
+
+.explore-card{
+    background: white;
+    margin: 3px 2px;
+    width: 210px;
+    height: 110px;
+    padding: 14px 24px;
+    border-radius: 8px;
+}
+.explore-card:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.05);
+}
+.explore-card p{
+    font-weight: 500;
+    margin-top: 14px;
+    font-size: 1.1rem;
+}
