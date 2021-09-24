@@ -16,7 +16,7 @@ export default function About() {
             content: `ShortTube is a react based video streaming app developed 
                 by sravan. shortTube is a shorter version of youtube 
                 (a Youtube clone) but only for short videos i.e., you can 
-                view/upload videos which are less than or equal to 30 seconds. It also user management, so you can try signing up and registering to shortTube etc`
+                view/upload videos which are less than or equal to 30 seconds. It also includes user management, so you can try signing up and registering to shortTube etc`
           },
           {
             title: "Features of shortTube",
