@@ -13,6 +13,7 @@ import {AuthProvider} from './user-management/AuthContext'
 import Login from './user-management/Login';
 import VideoScreen from './components/VideoScreen';
 import SearchPage from './components/SearchPage';
+import About from './About/About';
 
 function App() {
   const [sidebar, setSidebar] = useState(true)
@@ -39,6 +40,7 @@ function App() {
                   <Route path='/login' component={Login} exact />
                   <Route path='/videos/:vstring' component={VideoScreen} exact />
                   <Route path='/search/:val' component={SearchPage} exact />
+                  <Route path='/about' component={About} exact />
                 </Switch>
             </Router>
         </div>

@@ -20,6 +20,17 @@
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     padding: 4px 0;
+    position: relative;
+}
+.video-section .options{
+     position: absolute;
+     bottom: 0px;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.7);
+     height: 40px;
+}
+.video-section .options button{
+    color: white;
 }
 .video-section video{
     height: 100%;
@@ -36,7 +47,6 @@
 .recommendations-container{
     grid-area: recommendation-section;
     height: 100px;
-    padding-left: 20px;
 }
 .subscribe-btn{
     border: none;
@@ -112,6 +122,37 @@
     padding: 0 10px;
     text-transform: capitalize;
 }
+.rangeslider.rangeslider-horizontal{
+    width: 50%;
+    height: 3px;
+}
+.rangeslider-horizontal .rangeslider__handle{
+    height: 18px !important;
+    width: 18px !important;
+}
+.rangeslider-horizontal .rangeslider__handle:after{
+    height: 8px !important;
+    width: 8px !important;
+    left: 4.15px !important;
+    top: 4.15px !important;
+}
+.options h6{
+    color: white;
+    font-weight: bolder;
+}
+button.btn.loop-on{
+    color: white;
+}
+button.btn.loop-off{
+    color: rgba(255, 255, 255, 0.5)
+}
+
+@media screen and (min-width: 1101px){
+    .options div.d-flex button{
+        margin: 0 9px !important;
+    }
+    
+}
 @media screen and (max-width: 1100px){
     .video-screen{
         padding: 20px;
@@ -120,7 +161,7 @@
         display: grid; 
         height: 200px;
         width: 100%;
-        grid-template-columns: 1.3fr 0.7fr; 
+        grid-template-columns: 1.2fr 0.8fr; 
         grid-template-rows: 1fr 1fr; 
         grid-template-areas: 
             "video-section video-section"
@@ -135,6 +176,9 @@
     .description-section {
         grid-area: description-section;
     }
+    .options div.d-flex button{
+        margin: 0 8px !important;
+    }
 }
 @media screen and (max-width: 800px){
     .yt-maxi-card{
@@ -142,6 +186,10 @@
         height: 120px;
         display: flex;
         margin: 8px;
+    }
+    .rangeslider.rangeslider-horizontal{
+        width: 40%;
+        height: 3px;
     }
     .explore-cards-section{
         justify-content: center;
@@ -179,6 +227,18 @@
     }
     .description-section {
         grid-area: description-section;
+    }
+}
+@media screen and (max-width: 400px){
+    .options div.d-flex{
+        flex-wrap: wrap;
+    }
+    .rangeslider.rangeslider-horizontal{
+        width: 30%;
+        height: 3px;
+    }
+    .options div.d-flex button{
+        margin: 0 2px !important;
     }
 }
 /* .{

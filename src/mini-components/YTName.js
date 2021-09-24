@@ -71,7 +71,7 @@ export default function YTName() {
                     </button>
                     <Tooltip title={`${user}`}>
                         <div className='Name-icon' style={{padding: '7px'}}>
-                            {user.substring(0, 2)}
+                            {user ? user.substring(0, 2): 'No'}
                         </div>
                     </Tooltip></>)}
                 </div>

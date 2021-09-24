@@ -189,7 +189,8 @@ export default function UploadPage() {
                 </Button>
             </Form> 
             <div className='my-4'>
-                <a href='' className='text-primary not-link'>click here</a> to download sample video file to upload
+                <a href='https://shorttube.s3.amazonaws.com/shashilsravan.ss.ss/Jerry_dancing/WhatsApp%20Video%202021-09-19%20at%206.43.23%20PM.mp4' 
+                target='_blank' className='text-primary not-link' download>click here</a> to download sample video file to upload
             </div>
             </>}
         </div>

@@ -29,7 +29,7 @@ export default function UserField() {
             <Tooltip title={`${user}`}>
                 <IconButton onClick={handleClick}>
                     <div className='Name-icon'>
-                        {user.substring(0, 2)}
+                        {user ? user.substring(0, 2): 'No'}
                     </div>
                 </IconButton>
             </Tooltip>

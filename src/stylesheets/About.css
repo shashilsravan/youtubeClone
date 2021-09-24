@@ -1,0 +1,12 @@
+.faq-title{
+    justify-content: center !important;
+    margin: 8px 0;
+    padding-bottom: 6px !important;
+}
+.row-title-text{
+    font-style: italic;
+    font-size: 20px;
+}
+.row-content-text{
+    font-size: 17.5px !important;
+}
