@@ -41,7 +41,7 @@ Backend perspective:
 Images & Videos hosted on 
 * [AWS S3 Buckets](https://aws.amazon.com)
 
-Includes - Video streaming with different options, Uploading videos, Searching trhough them.
+Includes - Video streaming with different options, Uploading videos, Searching trhough them and user management
 
 ## Getting Started
 
