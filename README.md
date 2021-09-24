@@ -13,7 +13,7 @@
     <a href="https://github.com/shashilsravan/youtubeClone"><strong>Explore the project »</strong></a>
     <br />
     <br />
-    <a href="https://shorttube.herokuapp.com/">View Demo</a>
+    <a href="#">View Demo</a>
     ·
     <a href="https://github.com/shashilsravan/youtubeClone/issues">Report Bug</a>
     ·
