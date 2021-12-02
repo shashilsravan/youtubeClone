@@ -14,7 +14,6 @@ export default function UploadPage() {
     const [duration, setDuration] = useState(0)
     const [video, setVideo] = useState(null)
     const [thumbnail, setThumbnail] = useState(null)
-    const [logo, setLogo] = useState(null)
     const [loading, setLoading] = useState(false)
     const { currentUser } = useAuth()
 
@@ -40,7 +39,7 @@ export default function UploadPage() {
                 region: process.env.REACT_APP_REGION,
                 dirName: stich(ytName) + '/' + stich(title) ,
                 accessKeyId: process.env.REACT_APP_ACCESS_ID,
-                secretAccessKey: process.env.REACT_APP_ACCESS_KEY
+                secretAccessKey: process.env.REACT_APP_ACCESS_KEY,
             }
             let newObj = {}
             S3FileUpload.uploadFile(thumb, config).then(data => {
@@ -60,11 +59,11 @@ export default function UploadPage() {
             toast.error('Title of the video should be minimum of length 12 letters')
             setTitle('')
         }
-        if (ytName.length < 6){
-            toast.error('Name of the channel should contain minimum of 5 letters')
+        if (ytName.length < 3){
+            toast.error('Name of the channel should contain minimum of 3 letters')
             setYtName('')
         }
-        if (ytName.trim().length > 5 && title.trim().length > 11 &&
+        if (ytName.trim().length > 3 && title.trim().length > 11 &&
             duration < 36 && video !== null && thumbnail !== null){
             let created_on = new Date()
             uploadData(thumbnail, video).then((response) => {
@@ -78,6 +77,7 @@ export default function UploadPage() {
             })
         }
         else{
+            setLoading(false)
             toast.error('Error submitting the details please refresh the page and fill the form again')
         }
     }

@@ -92,6 +92,10 @@ export default function Sidepanel({sidebar}) {
                     <IconSheet icon={<SubscriptionsOutlinedIcon style={{fontSize: 24}} />} title={"Upload a Video"} selected={pathh === 'upload'}/>
                 </a>
                 <hr />
+                <p className='ms-4 text-muted' style={{fontSize: 12}}>
+                    Below is Static content <br />
+                    Placed to show exact UI of youtube
+                </p>
                 <IconSheet icon={<VideoLibraryOutlinedIcon style={{fontSize: 24}} />} title={"Library"}/>
                 <IconSheet icon={<HistoryOutlinedIcon style={{fontSize: 24}} />} title={"History"}/>
                 <IconSheet icon={<OndemandVideoOutlinedIcon style={{fontSize: 24}} />} title={"Your videos"}/>

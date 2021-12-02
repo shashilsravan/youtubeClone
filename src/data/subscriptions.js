@@ -21,7 +21,7 @@ export const data = [
     },
     {
         id: 5,
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Alan_walker20.jpg/330px-Alan_walker20.jpg",
+        img: "https://i.pinimg.com/originals/4e/a8/b8/4ea8b86a2768f7adf093cdff53ab2e61.png",
         title: "Alan walker"
     }
 ]

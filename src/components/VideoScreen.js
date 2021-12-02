@@ -197,11 +197,12 @@ export default function VideoScreen() {
                             </div>
                             <h5 className='m-0 mx-2'>{data.ytName}</h5>
                         </div>
-                        <button className='subscribe-btn'>Subscribe</button>
+                        
                     </div>
                     <hr />
                 </div>
-                <div className='recommendations-container'>
+                <div className='recommendations-container px-2'>
+                    <h5 className='mx-4 my-3'>Recommended videos: </h5>
                     {randomRows.map(each => {
                         return (<MiniYTCard data={totalData[each]} urlTo={each} key={each} />)
                     })}
